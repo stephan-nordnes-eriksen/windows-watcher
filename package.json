@@ -1,6 +1,6 @@
 {
   "name": "windows-watcher",
-  "version": "0.0.1-pre3",
+  "version": "0.0.1-pre4",
   "description": "Node.js directory watcher built with the native windows FileSystemWatcher",
   "keywords": [
     "watcher",
@@ -16,6 +16,10 @@
     "url": "https://github.com/stephan-nordnes-eriksen"
   },
   "main": "./lib/watcher.js",
+  "files":[
+    "lib/watcher.js",
+    "bin/NativeWatcher.dll"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/stephan-nordnes-eriksen/windows-watcher.git"
