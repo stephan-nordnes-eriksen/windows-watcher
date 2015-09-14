@@ -12,18 +12,18 @@ class Watcher
       edge = require("edge")
 
     @bridgeObject = null
-    if fs.existsSync(path.resolve(__dirname, '..', 'bin', 'Watcher.dll'))
+    if fs.existsSync(path.resolve(__dirname, '..', 'bin', 'NativeWatcher.dll'))
       @bridgeObject = edge.func({
-        assemblyFile: path.resolve(__dirname, '..', 'bin', 'Watcher.dll'),
+        assemblyFile: path.resolve(__dirname, '..', 'bin', 'NativeWatcher.dll'),
         typeName: 'NativeWatcher.Startup',
         methodName: 'Invoke'})
-    else if fs.existsSync(path.resolve('Watcher.dll'))
+    else if fs.existsSync(path.resolve('NativeWatcher.dll'))
       @bridgeObject = edge.func({
-        assemblyFile: path.resolve('Watcher.dll'),
+        assemblyFile: path.resolve('NativeWatcher.dll'),
         typeName: 'NativeWatcher.Startup',
         methodName: 'Invoke'})
     else
-      console.error 'No Watcher.dll found'
+      console.error 'No NativeWatcher.dll found'
     
   watch: (fileSystemPath, callback, recursive=true, filter="") ->
     if @bridgeObject == null
@@ -34,6 +34,7 @@ class Watcher
         filter: ''
         recursive: true
         stopping: false
+        stoppingAll: false
         responseCallback: callback
 
       # payload2 = 
@@ -57,8 +58,12 @@ class Watcher
         filter: ''
         recursive: true
         stopping: true
+        stoppingAll: false
         responseCallback: ->
-
+      @bridgeObject payload, (error, results) ->
+        if error != null
+          console.log error
+        return
   unwatchAll: ->
     if @bridgeObject == null
       console.error 'watcher not initialized correctly'
