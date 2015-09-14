@@ -2,6 +2,8 @@
 
 # Windows Watcher
 
+#### Warning: Pre-release. Not suited for production.
+
 [![Dependency status](https://img.shields.io/david/stephan-nordnes-eriksen/windows-watcher.svg?style=flat)](https://david-dm.org/stephan-nordnes-eriksen/windows-watcher)
 [![devDependency Status](https://img.shields.io/david/dev/stephan-nordnes-eriksen/windows-watcher.svg?style=flat)](https://david-dm.org/stephan-nordnes-eriksen/windows-watcher#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/stephan-nordnes-eriksen/windows-watcher.svg?style=flat&branch=master)](https://travis-ci.org/stephan-nordnes-eriksen/windows-watcher)
