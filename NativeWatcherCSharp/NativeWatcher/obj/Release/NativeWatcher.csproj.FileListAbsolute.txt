@@ -1,0 +1,6 @@
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\bin\Release\NativeWatcher.dll.config
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\bin\Release\NativeWatcher.dll
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\bin\Release\NativeWatcher.pdb
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\obj\Release\NativeWatcher.csprojResolveAssemblyReference.cache
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\obj\Release\NativeWatcher.dll
+C:\Users\Stephan_2\Documents\Visual Studio 2012\Projects\NativeWatcher\NativeWatcher\obj\Release\NativeWatcher.pdb
