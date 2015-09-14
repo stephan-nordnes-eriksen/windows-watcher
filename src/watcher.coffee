@@ -60,6 +60,17 @@ class Watcher
         stopping: true
         responseCallback: ->
 
+  unwatchAll: ->
+    if @bridgeObject == null
+      console.error 'watcher not initialized correctly'
+    else
+      payload = 
+        path: fileSystemPath
+        filter: ''
+        recursive: true
+        stopping: true
+        stoppingAll: true #can't remember if this is correct or not.
+        responseCallback: ->    
 ###
   _listener_action = edge.func("""
         using System.Threading.Tasks;\
