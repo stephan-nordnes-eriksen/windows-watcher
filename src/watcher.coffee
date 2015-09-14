@@ -7,10 +7,9 @@ path = require('path')
 
 class Watcher
   constructor: (edgeObject)->
-    if edgeObject == null
+    edge = edgeObject
+    if ! edgeObject?
       edge = require("edge")
-    else
-      edge = edgeObject
 
     @bridgeObject = null
     if fs.existsSync(path.resolve(__dirname, '..', 'bin', 'Watcher.dll'))
