@@ -169,3 +169,5 @@ class Watcher
 # rl.question 'Press enter to exit', (answer) ->
 #   rl.close()
 #   return
+
+module.exports = Watcher;
