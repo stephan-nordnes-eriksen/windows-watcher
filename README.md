@@ -10,9 +10,7 @@
 
 [![NPM](https://nodei.co/npm/windows-watcher.svg?style=flat)](https://npmjs.org/package/windows-watcher)
 
-An event aggregator for using the Publish/Subscribe pattern, also known as Pub/Sub. This version also have a Respond/Request feature.
-
-Used together these two features allow you to create truly decoupled code. 
+A Windows file system watcher utilizing the native FileSystemWatcher api for file events.
 
 ## Installation
 
