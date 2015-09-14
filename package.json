@@ -1,6 +1,6 @@
 {
   "name": "windows-watcher",
-  "version": "0.0.1-pre",
+  "version": "0.0.1-pre2",
   "description": "Node.js directory watcher built with the native windows FileSystemWatcher",
   "keywords": [
     "watcher",
